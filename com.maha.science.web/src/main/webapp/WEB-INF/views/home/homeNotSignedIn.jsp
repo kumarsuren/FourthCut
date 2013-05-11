@@ -8,3 +8,35 @@
 		<a href='<s:url value="/signup" />' class="btn btn-primary btn-large"> Sign Up </a>
 	</p>
 </div>
+    <form class="form-search">
+    <input type="text" class="input-medium search-query">
+    <button type="submit" class="btn">Search</button>
+    </form>
+
+    <table class="table table-hover">
+    <thead>
+    <tr class="success"><th>Name</th><th>Location</th></tr>
+    </thead>
+    <tr><td>Ram</td><td>Chennai</td></tr>
+    <tr><td>Rupesh</td><td>Hyderabad</td></tr>
+    <tr><td>Harish</td><td>Chennai</td></tr>
+    <tr class="info"><td>Hetal</td><td>Hyderabad</td></tr>
+    <tr><td>Vasu</td><td>Chennai</td></tr>
+    <tr class="warning"><td>Satish</td><td>Hyderabad</td></tr>
+    <tr><td>BC</td><td>Chennai</td></tr>
+    <tr class="error"><td>David</td><td>Hyderabad</td></tr>
+    </table>
+    
+    
+    <form>
+    <fieldset>
+    <legend>Legend</legend>
+    <label>Label name</label>
+    <input type="text" placeholder="Type something">
+    <span class="help-block">Example block-level help text here.</span>
+    <label class="checkbox">
+    <input type="checkbox"> Check me out
+    </label>
+    <button type="submit" class="btn">Submit</button>
+    </fieldset>
+    </form>    
