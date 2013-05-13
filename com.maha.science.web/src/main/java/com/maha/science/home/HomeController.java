@@ -12,7 +12,7 @@ public class HomeController {
 	public String index(Principal principal) {
 		return principal != null ? "homeSignedIn" : "homeNotSignedIn";
 	}
-	
+
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test() {
 		
@@ -20,7 +20,6 @@ public class HomeController {
 		
 		return "homeSignedIn";
 	}
-	
 	
 	@RequestMapping(value = "/category", method = RequestMethod.GET)
 	public String modify(Principal principal) {
