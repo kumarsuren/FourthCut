@@ -28,7 +28,7 @@
     <div class="row">
     <div class="span4 offset2">
 <p>
-    <a href="category" class="btn btn-large btn-block btn-primary">Add/Modify a Category</a>
+    <a href="category" class="btn btn-large btn-block btn-primary">Add/Modify a Category      new  link</a>
 </p>
 
 </div>
