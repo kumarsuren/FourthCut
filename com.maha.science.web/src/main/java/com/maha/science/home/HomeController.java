@@ -14,11 +14,11 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test() {
+	public String test(Principal principal) {
 		
 		System.out.println(" inside test ...");
 		
-		return "homeSignedIn";
+		return "testSignedIn";
 	}
 	
 	@RequestMapping(value = "/category", method = RequestMethod.GET)
