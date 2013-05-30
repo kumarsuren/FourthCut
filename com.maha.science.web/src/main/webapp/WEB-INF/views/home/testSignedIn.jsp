@@ -5,7 +5,7 @@
 	Hello <security:authentication property="principal.username" />! Welcome to the Movie Watcher! 	
 </p>
 
-<p>Welcome to Movie Watcher</p>
+<p>Welcome to Movie Watcher !</p>
 
  <div class="row">
     <div class="span8 offset2">
@@ -30,12 +30,7 @@
 <p>
     <a href="category" class="btn btn-large btn-block btn-primary">Add/Modify a Category</a>
 </p>
-<p>
-<a href="#" class="btn btn-large btn-block btn-primary">Add/Modify a Test</a>
-</p>
-<p>
-<a href="#" class="btn btn-large btn-block btn-primary">Add/Modify a Question</a>
-</p>
+
 </div>
 </div>
 
