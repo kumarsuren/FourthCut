@@ -4,25 +4,38 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
+	<head>
+		<meta charset="utf-8" />
 	<title>Welcome to tveeler Movie world!</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet" media="screen" />
-	<link href="<c:url value="/resources/css/core.css" />" rel="stylesheet" media="screen" />
-	<link href="<c:url value="/resources/css/science.css" />" rel="stylesheet" media="screen" />
-	
-	<tilesx:useAttribute id="styles" name="styles" classname="java.util.List" ignore="true" />
-	<c:forEach var="cssName" items="${styles}">
-		<link type="text/css" href="<c:url value="/resources/css/${cssName}"/>" rel="stylesheet" media="screen" />
-	</c:forEach>
-	
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<meta name="description" content="Minimal empty page" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--basic styles-->
+		<link href="resources/tv/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="resources/tv/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="resources/tv/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="resources/tv/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<!--page specific plugin styles-->
+		<!--fonts-->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+		<!--ace styles-->
+
+		<link rel="stylesheet" href="resources/tv/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="resources/tv/assets/css/ace-responsive.min.css" />
+		<link rel="stylesheet" href="resources/tv/assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="resources/tv/assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
     
 </head>
 <body>
