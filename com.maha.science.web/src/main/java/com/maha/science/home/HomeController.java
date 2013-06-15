@@ -12,6 +12,32 @@ public class HomeController {
 	public String index(Principal principal) {
 		return principal != null ? "homeSignedIn" : "homeNotSignedIn";
 	}
+	
+	@RequestMapping(value = "/tv", method = RequestMethod.GET)
+	public String tv(Principal principal) {
+		
+		System.out.println(" inside tv ...");
+		
+		return "tvSignedIn";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(Principal principal) {
