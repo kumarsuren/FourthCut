@@ -57,7 +57,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="<s:url value="/logout"></s:url>">
 										<i class="icon-off"></i>
 										Logout
 									</a>
