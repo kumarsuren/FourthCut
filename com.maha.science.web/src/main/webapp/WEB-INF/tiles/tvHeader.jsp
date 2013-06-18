@@ -40,7 +40,7 @@
 								<img class="nav-user-photo" src="resources/tv/assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span id="user_info">
 									<small>Welcome,</small>
-									Jason
+									<security:authentication property="principal.username"/>
 								</span>
 
 								<i class="icon-caret-down"></i>
