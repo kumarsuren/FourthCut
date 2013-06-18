@@ -8,7 +8,7 @@
 					<a href="#" class="brand">
 						<small>
 							<i class="icon-leaf"></i>
-							tveeler -<small> movies tv and entertainment</small>
+							<b>tveeler</b> <small> <small>[tv shows, movies]</small></small>
 						</small>
 					</a>				
 					
@@ -37,7 +37,7 @@
 					
 						<li class="light-blue user-profile">
 							<a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
-								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="resources/tv/assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span id="user_info">
 									<small>Welcome,</small>
 									Jason
