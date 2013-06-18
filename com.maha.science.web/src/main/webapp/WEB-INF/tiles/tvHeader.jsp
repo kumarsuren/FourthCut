@@ -30,11 +30,6 @@
 <!-- 						<li><a href='<s:url value="/signin"></s:url>'>Sign in</a></li>  -->
 					</security:authorize>
 					<security:authorize access="isAuthenticated()">
-					
-						<li><a href='<s:url value="/logout"></s:url>'>Logout (<security:authentication property="principal.username"/>)</a></li>
-					</security:authorize>					
-					
-					
 						<li class="light-blue user-profile">
 							<a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
 								<img class="nav-user-photo" src="resources/tv/assets/avatars/user.jpg" alt="Jason's Photo" />
@@ -63,7 +58,11 @@
 									</a>
 								</li>
 							</ul>
-						</li>					
+						</li>						
+					</security:authorize>					
+					
+					
+										
 					
 					
 						<li class="grey">
