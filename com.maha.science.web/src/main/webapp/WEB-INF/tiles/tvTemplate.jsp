@@ -32,6 +32,9 @@
 		  <link rel="stylesheet" href="resources/tv/assets/css/ace-ie.min.css" />
 		<![endif]-->
 
+		<link rel="stylesheet" href="resources/tv/assets/css/tv-custom.css" />
+
+
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	    <!--[if lt IE 9]>
 	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,5 +69,33 @@
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+    
+    <script src="resources/tv/assets/js/bootbox.min.js"></script>
+    
+	<script type="text/javascript">
+	$("#bootbox-regular").on('click', function() {
+		bootbox.prompt("Your favourite TV show shown below ...", function(result) {
+			if (result === null) {
+				//Example.show("Prompt dismissed");
+			} else {
+				//Example.show("Hi <b>"+result+"</b>");
+			}
+		});
+	});
+	
+	
+	$("#bootbox-options").on('click', function() {
+		bootbox.dialog("Your favourite movie is being loaded.....", [
+			{
+			"label" : "Success!",
+			"class" : "btn-small btn-success",
+			"callback": function() {
+				//Example.show("great success");
+			}
+			}]
+		);
+	});
+	
+    </script>
 </body>
 </html>
