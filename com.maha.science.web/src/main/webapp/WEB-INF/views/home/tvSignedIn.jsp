@@ -47,23 +47,59 @@
 	<div id="page-content" class="clearfix">
 	<div class="row-fluid">
 		<div class="row-fluid">
-			<div class="span6">
-				<div class="widget-box">
-					<div class="widget-header widget-header-flat">
-						<h4>Watch Updates to your Favourite shows</h4>
-					</div>
-					<div class="widget-body">
-						<div class="widget-main">
+			<div class="span12">
+	<div class="tabbable">
+		<ul class="nav nav-tabs" id="myTab">
+			<li class="active">
+				<a data-toggle="tab" href="#my_shows">
+					<i class="green icon-home bigger-110"></i>
+					My Shows
+				</a>
+			</li>
+
+			<li>
+				<a data-toggle="tab" href="#profile">
+					Messages
+					<span class="badge badge-important">4</span>
+				</a>
+			</li>
+
+			<li class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+					Dropdown
+					<b class="caret"></b>
+				</a>
+
+				<ul class="dropdown-menu dropdown-info">
+					<li>
+						<a data-toggle="tab" href="#dropdown1">Image Examples</a>
+					</li>
+
+					<li>
+						<a data-toggle="tab" href="#dropdown2">@mdo</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="my_shows" class="tab-pane in active">
+										
+							
+						
+						
+						
+						
 							<div class="row-fluid">
-						<button id="bootbox-regular-tv" class="btn">Devatha Episode # 1</button>
-							<div class="accordion" id="accordion2">
+							<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+
+<div class="accordion" id="accordion_shows">
 									<div class="accordion-group">
 										<div class="accordion-heading">
 											<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
 												Collapsible Group Item #1
 											</a>
 											
-											<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 											<button id="bootbox-options" class="btn btn-success">Pinni Episode #15</button>
 
 										</div>
@@ -102,58 +138,22 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div>	
+
+
 								
 							</div>
-						</div>
-					</div>
-				</div>
-</div>
-
-
-
-
-<div class="span6">
-								<div class="tabbable">
-									<ul class="nav nav-tabs" id="myTab">
-										<li class="active">
-											<a data-toggle="tab" href="#home">
-												<i class="green icon-home bigger-110"></i>
-												Home
-											</a>
-										</li>
-
-										<li>
-											<a data-toggle="tab" href="#profile">
-												Messages
-												<span class="badge badge-important">4</span>
-											</a>
-										</li>
-
-										<li class="dropdown">
-											<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-												Dropdown
-												<b class="caret"></b>
-											</a>
-
-											<ul class="dropdown-menu dropdown-info">
-												<li>
-													<a data-toggle="tab" href="#dropdown1">Image Examples</a>
-												</li>
-
-												<li>
-													<a data-toggle="tab" href="#dropdown2">@mdo</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
-
-									<div class="tab-content">
-										<div id="home" class="tab-pane in active">
-											<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+							
+							
+			
+										
+										
+								
 											
 											
-											<button id="bootbox-regular" class="btn">Devatha Episode # 31</button>
+																		
+											
+											
 											
 											
 											
@@ -385,6 +385,24 @@
 
 										<div id="dropdown2" class="tab-pane">
 											<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
+											
+																					
+										
+				<div class="widget-box">
+					<div class="widget-header widget-header-flat">
+						<h4>Watch Updates to your Favourite shows</h4>
+					</div>
+					<div class="widget-body">
+						<div class="widget-main">
+						
+						
+							
+						</div>
+					</div>
+				</div>										
+						
+											
+											
 										</div>
 									</div>
 								</div>
