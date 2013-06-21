@@ -18,7 +18,14 @@
 		<!--[if IE 7]>
 		  <link rel="stylesheet" href="resources/tv/assets/css/font-awesome-ie7.min.css" />
 		<![endif]-->
+		
 		<!--page specific plugin styles-->
+
+		<link rel="stylesheet" href="resources/tv/assets/css/colorbox.css" />
+		
+		
+		
+		
 		<!--fonts-->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
@@ -32,14 +39,13 @@
 		  <link rel="stylesheet" href="resources/tv/assets/css/ace-ie.min.css" />
 		<![endif]-->
 
-		<link rel="stylesheet" href="resources/tv/assets/css/tv-custom.css" />
-
-
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	    <!--[if lt IE 9]>
 	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
-    
+		
+		<!--inline or custom styles if any-->
+		<link rel="stylesheet" href="resources/tv/assets/css/tv-custom.css" />    
 </head>
 <body>
 	
@@ -71,6 +77,12 @@
     <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
     
     <script src="resources/tv/assets/js/bootbox.min.js"></script>
+    <script src="resources/tv/assets/js/jquery.colorbox-min.js"></script>
+    
+	<!--ace scripts-->
+	<script src="resources/tv/assets/js/ace-elements.min.js"></script>
+	<script src="resources/tv/assets/js/ace.min.js"></script>
+    
     
 	<script type="text/javascript">
 	$("#bootbox-regular").on('click', function() {
@@ -84,18 +96,64 @@
 	});
 	
 	
+	
+	
 	$("#bootbox-options").on('click', function() {
-		bootbox.dialog("Your favourite movie is being loaded.....", [
-			{
-			"label" : "Success!",
-			"class" : "btn-small btn-success",
-			"callback": function() {
-				//Example.show("great success");
-			}
-			}]
-		);
+		bootbox.dialog("<div class=\"row-fluid\"><div class=\"modal-header\"><a class=\"close\" href=\"javascript:;\">×</a><h3>Your favourite TV show shown below ...</h3></div><iframe id=\"ytplayer\" type=\"text/html\" width=\"100%\" height=\"700px\" src=\"https://www.youtube.com/embed/XN97sMeeuBs?controls=1&rel=0&showinfo=0\" 	frameborder=\"0\" allowfullscreen></iframe> </div>", []	);
 	});
 	
     </script>
+    
+    
+<!--inline scripts related to this page-->
+
+		<script type="text/javascript">
+			$(function() {
+	var colorbox_params = {
+		reposition:true,
+		scalePhotos:true,
+		scrolling:false,
+		previous:'<i class="icon-arrow-left"></i>',
+		next:'<i class="icon-arrow-right"></i>',
+		close:'&times;',
+		current:'{current} of {total}',
+		maxWidth:'100%',
+		maxHeight:'100%',
+		onOpen:function(){
+			document.body.style.overflow = 'hidden';
+		},
+		onClosed:function(){
+			document.body.style.overflow = 'auto';
+		},
+		onComplete:function(){
+			$.colorbox.resize();
+		}
+	};
+
+	$('.ace-thumbnails [data-rel="colorbox"]').colorbox(colorbox_params);
+	$("#cboxLoadingGraphic").append("<i class='icon-spinner orange'></i>");//let's add a custom loading icon
+
+	/**$(window).on('resize.colorbox', function() {
+		try {
+			//this function has been changed in recent versions of colorbox, so it won't work
+			$.fn.colorbox.load();//to redraw the current frame
+		} catch(e){}
+	});*/
+	})
+		</script>    
+    
+	<script type="text/javascript">
+	$("#bootbox-regular-tv").on('click', function() {
+		bootbox.prompt("Your favourite TV Show plays below ...", function(result) {
+			if (result === null) {
+				//Example.show("Prompt dismissed");
+			} else {
+				//Example.show("Hi <b>"+result+"</b>");
+				alert(result);
+			}
+		});
+	});
+	</script>    
+    
 </body>
 </html>

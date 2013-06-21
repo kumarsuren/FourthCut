@@ -51,7 +51,7 @@
 					<security:authorize access="isAuthenticated()">
 						<li class="light-blue user-profile">
 							<a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
-								<img class="nav-user-photo" src="resources/tv/assets/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="resources/tv/assets/avatars/user1.jpg" alt="Jason's Photo" />
 								<span id="user_info">
 									<small>Welcome,</small>
 									<security:authentication property="principal.username"/>

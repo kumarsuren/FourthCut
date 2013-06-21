@@ -33,9 +33,7 @@
 			</form>
 		</div><!--#nav-search-->
 	</div>
-	
 
-	
 	<div class="alert alert-info">
 		<button data-dismiss="alert" class="close" type="button">
 			<i class="icon-remove"></i>
@@ -45,10 +43,7 @@
 		You have some new shows that are available from last time you visited us.
 		<br>
 	</div>
-	
-	
-	
-	
+
 	<div id="page-content" class="clearfix">
 	<div class="row-fluid">
 		<div class="row-fluid">
@@ -60,8 +55,7 @@
 					<div class="widget-body">
 						<div class="widget-main">
 							<div class="row-fluid">
-
-
+						<button id="bootbox-regular-tv" class="btn">Devatha Episode # 1</button>
 							<div class="accordion" id="accordion2">
 									<div class="accordion-group">
 										<div class="accordion-heading">
@@ -69,10 +63,9 @@
 												Collapsible Group Item #1
 											</a>
 											
-											
+											<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 											<button id="bootbox-options" class="btn btn-success">Pinni Episode #15</button>
-											
-											
+
 										</div>
 
 										<div id="collapseOne" class="accordion-body collapse">
@@ -145,7 +138,7 @@
 
 											<ul class="dropdown-menu dropdown-info">
 												<li>
-													<a data-toggle="tab" href="#dropdown1">@fat</a>
+													<a data-toggle="tab" href="#dropdown1">Image Examples</a>
 												</li>
 
 												<li>
@@ -168,10 +161,226 @@
 
 										<div id="profile" class="tab-pane">
 											<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+											
+											
+											
+<div class="row-fluid">
+						<!--PAGE CONTENT BEGINS HERE-->
+
+						<div class="row-fluid">
+							<ul class="ace-thumbnails">
+								<li>
+									<a data-rel="colorbox" title="Photo Title" href="resources/tv/assets/images/gallery/image-1.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-1.jpg" alt="150x150">
+										<div class="tags">
+											<span class="label label-info">breakfast</span>
+											<span class="label label-important">fruits</span>
+											<span class="label label-success">toast</span>
+											<span class="label label-warning arrowed-in">diet</span>
+										</div>
+									</a>
+
+									<div class="tools">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-2.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-2.jpg" alt="150x150">
+										<div class="text">
+											<div class="inner">Sample Caption on Hover</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-3.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-3.jpg" alt="150x150">
+										<div class="text">
+											<div class="inner">Sample Caption on Hover</div>
+										</div>
+									</a>
+
+									<div class="tools tools-bottom">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-4.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-4.jpg" alt="150x150">
+										<div class="tags">
+											<span class="label label-info arrowed">fountain</span>
+											<span class="label label-important">recreation</span>
+										</div>
+									</a>
+
+									<div class="tools tools-top">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<img src="resources/tv/assets/images/gallery/thumb-5.jpg" alt="150x150">
+										<div class="text">
+											<div class="inner">
+												<span>Some Title!</span>
+
+												<br>
+												<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-5.jpg" class="cboxElement">
+													<i class="icon-zoom-in"></i>
+												</a>
+
+												<a href="#">
+													<i class="icon-user"></i>
+												</a>
+
+												<a href="#">
+													<i class="icon-share-alt"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-6.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-6.jpg" alt="150x150">
+									</a>
+
+									<div class="tools tools-right">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-1.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-1.jpg" alt="150x150">
+									</a>
+
+									<div class="tools">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<a data-rel="colorbox" href="resources/tv/assets/images/gallery/image-2.jpg" class="cboxElement">
+										<img src="resources/tv/assets/images/gallery/thumb-2.jpg" alt="150x150">
+									</a>
+
+									<div class="tools tools-top">
+										<a href="#">
+											<i class="icon-link"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-paper-clip"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-pencil"></i>
+										</a>
+
+										<a href="#">
+											<i class="icon-remove red"></i>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!--PAGE CONTENT ENDS HERE-->
+					</div>											
+											
+											
+											
+											
 										</div>
 
 										<div id="dropdown1" class="tab-pane">
 											<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+											
+											
+<div class="row">
+    <div class="span8 offset2">
+    <img src="http://placehold.it/150x200" class="img-rounded">
+    <img src="http://placehold.it/150x150" class="img-circle">
+    <img src="http://placehold.it/350x150" class="img-polaroid">
+    </div>
+    </div>											
+											
 										</div>
 
 										<div id="dropdown2" class="tab-pane">
@@ -198,63 +407,12 @@
 
 
 
-<p>Welcome to Tveeler again !!!</p>
 
-
-
-<div class="row">
-    <div class="span12">
-    <iframe id="ytplayer" type="text/html" width="100%" 
-src="https://www.youtube.com/embed/k-DdxmmV4UU?controls=1&rel=0&showinfo=0"
-frameborder="1" allowfullscreen></iframe>
-    </div>
-    </div>
-
-<div class="row">
-    <div class="span8 offset2 img-rounded">
-    <iframe id="ytplayer" type="text/html" width="640" height="360"
-src="https://www.youtube.com/embed/RqMZao60QYM?controls=1&rel=0&showinfo=0"
-frameborder="1" allowfullscreen></iframe>
-    </div>
-    </div>
-
-
- <div class="row">
-    <div class="offset2 span8 offset2">
     
-    <div id="myCarousel" class="carousel slide">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-    <div class="item">
-<iframe id="ytplayer" type="text/html" width="640" height="360"
-src="https://www.youtube.com/embed/13TQ13cdrXg?controls=1&rel=0&showinfo=0"
-frameborder="0" allowfullscreen></iframe>
-</div>
-    <div class="item">
-<iframe id="ytplayer" type="text/html" width="640" height="360"
-src="https://www.youtube.com/embed/RqMZao60QYM?controls=1&rel=0&showinfo=0"
-frameborder="0" allowfullscreen></iframe>
-
-</div>
-    <div class="active item">
     
-   <iframe id="ytplayer" type="text/html" width="640" height="360"
-src="https://www.youtube.com/embed/XN97sMeeuBs?controls=1&rel=0&showinfo=0"
-frameborder="0" allowfullscreen></iframe>
-</div>
-    </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
-</div>
-</div>
 
 
-<div class="row">
-    <div class="span8 offset2">
-    <img src="http://placehold.it/650x400" class="img-rounded">
-    <img src="http://placehold.it/150x150" class="img-circle">
-    <img src="http://placehold.it/350x150" class="img-polaroid">
-    </div>
-    </div>
+
+    
+    
+    
