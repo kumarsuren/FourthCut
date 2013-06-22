@@ -51,7 +51,10 @@
 	
 	<tiles:insertAttribute name="header"  defaultValue="" />
 	<!-- Page content -->
-	<div class="container">
+
+<div class="container" id="main-container">
+
+
         <% /* Show a message. See support.web package */ %>
         <c:if test="${not empty message}">
             <c:choose>
@@ -70,6 +73,7 @@
         </c:if>
 		<tiles:insertAttribute name="body" defaultValue="" />
 	</div>
+
 	<!-- End of page content -->
 	<tiles:insertAttribute name="footer"  defaultValue="" />
 	
@@ -155,6 +159,6 @@
 		});
 	});
 	</script>    
-    
+
 </body>
 </html>
