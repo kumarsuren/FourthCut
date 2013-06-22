@@ -449,27 +449,6 @@
 		$("#player1").attr("height","500px");
 	}
 	
-	
-	
-	
-	$("#changer1").click(function(){
-		//alert("changing the video to MS Openheart");
-		//$("#player1").attr("src", "http://www.youtube.com/embed/WKoj5mrSrB0?controls=0&rel=0&showinfo=0");
-		
-		$("#player1").attr("src", "http://www.youtube.com/embed/RGsPEj1UZR8?controls=0&rel=0&showinfo=0");
-		
-		                           //https://www.youtube.com/embed/VweOAP3-kc8?controls=1&rel=0&showinfo=0"
-	 });
-	 
-	 $("#changer2").click(function(){
-		//alert("changing the video to Harish Rao");
-		$("#player1").attr("src", "http://www.youtube.com/embed/VIGJZY9uW38?rel=0");
-	 });
-	 
-	
-	 
-	 
-	
 </script>
 
     
