@@ -95,6 +95,7 @@
 		});
 	});
 	
+	$("#play_video").on('click', videoPlay);	
 	
 	
 	

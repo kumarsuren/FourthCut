@@ -7,7 +7,7 @@
 		<ul class="breadcrumb">
 			<li>
 				<i class="icon-home"></i>
-				<a href="#">Home</a>
+				<a href="#">Movies</a>
 
 				<span class="divider">
 					<i class="icon-angle-right"></i>
@@ -15,13 +15,13 @@
 			</li>
 
 			<li>
-				<a href="#">UI Elements</a>
+				<a href="#">Telugu</a>
 
 				<span class="divider">
 					<i class="icon-angle-right"></i>
 				</span>
 			</li>
-			<li class="active">Elements</li>
+			<li class="active">Em Babu Laddu Kavala</li>
 		</ul><!--.breadcrumb-->
 
 		<div id="nav-search">
@@ -34,6 +34,8 @@
 		</div><!--#nav-search-->
 	</div>
 
+<div id="player"></div>
+
 	<div class="alert alert-info">
 		<button data-dismiss="alert" class="close" type="button">
 			<i class="icon-remove"></i>
@@ -41,8 +43,11 @@
 		<i class="green icon-bell-alt icon-only icon-animated-bell"></i>
 		<strong>Heads up!</strong>
 		You have some new shows that are available from last time you visited us.
-		<br>
 	</div>
+	
+	
+	
+		
 
 	<div id="page-content" class="clearfix">
 	<div class="row-fluid">
@@ -91,6 +96,11 @@
 						
 						
 							<div class="row-fluid">
+							<button id="play_video" class="btn btn-success">Em babu Laddu Kavala</button>
+							
+							<button id="play_video2" class="btn btn-success">ABN RK Open Heart Episode #15</button>
+							
+							
 							<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
 
 <div class="accordion" id="accordion_shows">
@@ -422,9 +432,45 @@
 
 </div>
 
+	
 
 
-
+<script  type="text/javascript">
+	var embedStr = "http://www.youtube.com/embed/";
+	var ctrlStr = "?controls=1&rel=0&showinfo=0&iv_load_policy=3&fs=1&autoplay=1&autohide=1";
+	 var playerDiv = "<div class=\"alert alert-info\"><button data-dismiss=\"alert\" class=\"close\" type=\"button\"><i class=\"icon-remove\"></i></button>	<div id=\"show_title\"></div><div class=\"row-fluid\"><iframe id=\"player1\" type=\"text/html\" width=\"0%\" height=\"0px\" src=\"\" frameborder=\"0\" allowfullscreen></iframe></div></div>"
+			
+	function videoPlay(){		
+		//$("#alert_content").html("<div class="alert alert-info\"><button data-dismiss="alert\" class="close\" type="button\"><i class="icon-remove\"></i></button><div id="show_title\">Title can be added here</div><div class="row-fluid\"><iframe id="ytplayer\" type="text/html\" width="100%\" height="600px\" src="https://www.youtube.com/embed/VweOAP3-kc8?controls=1&rel=0&showinfo=0\" 	frameborder="0\" allowfullscreen></iframe></div> </div>");
+		$("#show_title").html("<strong>Title after</strong>");
+		$("#player").html(playerDiv);
+		$("#player1").attr("src", embedStr+"RGsPEj1UZR8"+ctrlStr);
+		$("#player1").attr("width","98%");
+		$("#player1").attr("height","500px");
+	}
+	
+	
+	
+	
+	$("#changer1").click(function(){
+		//alert("changing the video to MS Openheart");
+		//$("#player1").attr("src", "http://www.youtube.com/embed/WKoj5mrSrB0?controls=0&rel=0&showinfo=0");
+		
+		$("#player1").attr("src", "http://www.youtube.com/embed/RGsPEj1UZR8?controls=0&rel=0&showinfo=0");
+		
+		                           //https://www.youtube.com/embed/VweOAP3-kc8?controls=1&rel=0&showinfo=0"
+	 });
+	 
+	 $("#changer2").click(function(){
+		//alert("changing the video to Harish Rao");
+		$("#player1").attr("src", "http://www.youtube.com/embed/VIGJZY9uW38?rel=0");
+	 });
+	 
+	
+	 
+	 
+	
+</script>
 
     
     
