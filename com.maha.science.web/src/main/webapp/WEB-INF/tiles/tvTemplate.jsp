@@ -80,6 +80,11 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
     
+   	<!--page specific plugin scripts-->
+
+	<script src="resources/tv/assets/js/jquery.dataTables.min.js"></script>
+	<script src="resources/tv/assets/js/jquery.dataTables.bootstrap.js"></script>
+    
     <script src="resources/tv/assets/js/bootbox.min.js"></script>
     <script src="resources/tv/assets/js/jquery.colorbox-min.js"></script>
     
@@ -87,6 +92,34 @@
 	<script src="resources/tv/assets/js/ace-elements.min.js"></script>
 	<script src="resources/tv/assets/js/ace.min.js"></script>
     
+
+
+		<!--inline scripts related to this page-->
+
+		<script type="text/javascript">
+			$(function() {
+				var oTable1 = $('#table_report').dataTable( {
+				"aoColumns": [
+			      { "bSortable": false },
+			      null, null,null, null, null,
+				  { "bSortable": false }
+				] } );
+				
+				
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});
+						
+				});
+			
+				$('[data-rel=tooltip]').tooltip();
+			})
+		</script>
+
     
 	<script type="text/javascript">
 	$("#bootbox-regular").on('click', function() {
