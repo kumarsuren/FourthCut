@@ -80,7 +80,7 @@
 												<div class="accordion-heading">
 													<a class="accordion-toggle collapsed"
 														data-toggle="collapse" data-parent="#accordion2"
-														href="#collapseOne"> Collapsible Group Item #1 </a>
+														href="#collapseOne"> My TV Shows </a>
 
 													<button id="bootbox-options" class="btn btn-success">Pinni
 														Episode #15</button>
@@ -104,7 +104,7 @@
 												<div class="accordion-heading">
 													<a class="accordion-toggle collapsed"
 														data-toggle="collapse" data-parent="#accordion2"
-														href="#collapseTwo"> Collapsible Group Item #2 </a>
+														href="#collapseTwo"> My Shortlisted Movies </a>
 												</div>
 
 												<div id="collapseTwo" class="accordion-body collapse">
@@ -164,7 +164,7 @@
 												<div class="accordion-heading">
 													<a class="accordion-toggle collapsed"
 														data-toggle="collapse" data-parent="#accordion2"
-														href="#collapseThree"> Collapsible Group Item #3 </a>
+														href="#collapseThree"> My News Channels </a>
 												</div>
 
 												<div id="collapseThree" class="accordion-body collapse">
