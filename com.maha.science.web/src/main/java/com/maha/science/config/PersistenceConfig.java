@@ -1,5 +1,6 @@
 package com.maha.science.config;
 
+import java.net.URI;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -21,9 +22,11 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 @EnableJpaRepositories
 public class PersistenceConfig implements TransactionManagementConfigurer {
 	
+	@Value("${DATABASE_URL}")
+	private URI dbUrl;
 	@Value("${dataSource.driverClassName}")
 	private String driver;
-	@Value("${dataSource.url}")
+	@Value("${DATABASE_URL}")
 	private String url;
 	@Value("${dataSource.username}")
 	private String username;
@@ -34,9 +37,17 @@ public class PersistenceConfig implements TransactionManagementConfigurer {
 	@Value("${hibernate.hbm2ddl.auto}")
 	private String hbm2ddlAuto;
 
+	
+	
+
 	@Bean
 	public DataSource configureDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		url = "jdbc:postgresql://"+dbUrl.getHost()+":"+dbUrl.getPort()+dbUrl.getPath();
+		username=dbUrl.getUserInfo().split(":")[0]; 
+		password=dbUrl.getUserInfo().split(":")[1];
+		String dataStr ="driver: "+ driver + " , dbUrl:  "+	dbUrl + " , url:  " +	url + " , username:  " +username +" , password:  "+ password +" "+ dialect + " "+ hbm2ddlAuto;
+		System.out.println(dataStr);
 		dataSource.setDriverClassName(driver);
 		dataSource.setUrl(url);
 		dataSource.setUsername(username);
@@ -48,24 +59,12 @@ public class PersistenceConfig implements TransactionManagementConfigurer {
 	public LocalContainerEntityManagerFactoryBean configureEntityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setDataSource(configureDataSource());
-		
-		
-		 String dataStr = driver + " "+	url + " " +username +" "+ password +" "+ dialect + " "+ hbm2ddlAuto;
-		
-		
-		System.out.println(dataStr);
-		
-		
 		entityManagerFactoryBean.setPackagesToScan("com.maha.science");
 		entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-		
-		
-		
 		Properties jpaProperties = new Properties();
 		jpaProperties.put(org.hibernate.cfg.Environment.DIALECT, dialect);
 		jpaProperties.put(org.hibernate.cfg.Environment.HBM2DDL_AUTO, hbm2ddlAuto);
 		entityManagerFactoryBean.setJpaProperties(jpaProperties);
-		
 		return entityManagerFactoryBean;
 	}
 
