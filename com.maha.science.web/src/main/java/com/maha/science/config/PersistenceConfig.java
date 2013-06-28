@@ -47,7 +47,7 @@ public class PersistenceConfig implements TransactionManagementConfigurer {
 		username=dbUrl.getUserInfo().split(":")[0]; 
 		password=dbUrl.getUserInfo().split(":")[1];
 		String dataStr ="driver: "+ driver + " , dbUrl:  "+	dbUrl + " , url:  " +	url + " , username:  " +username +" , password:  "+ password +" "+ dialect + " "+ hbm2ddlAuto;
-		System.out.println(dataStr);
+		//System.out.println(dataStr);
 		dataSource.setDriverClassName(driver);
 		dataSource.setUrl(url);
 		dataSource.setUsername(username);
