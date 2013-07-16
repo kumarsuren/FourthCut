@@ -13,6 +13,34 @@
     <button type="submit" class="btn">Search</button>
     </form>
 
+
+
+<div class="row">
+
+	<div class="offset4 span4 offset4">
+	    <table class="table table-hover">
+    <thead>
+    <tr class="success"><th>Name</th><th>Location</th></tr>
+    </thead>
+    <tr><td class="info"><img class="img-polaroid" src="http://imageplaceholder.com/gothic/250/100"></td></tr>
+    
+    <tr class="info"><td><img class="img-polaroid" src="http://imageplaceholder.com/gothic/250/100"></td></tr>
+    <tr><td>Rupesh</td><td>Hyderabad</td></tr>
+    <tr><td>Harish</td><td>Chennai</td></tr>
+    <tr class="info"><td>Hetal</td><td>Hyderabad</td></tr>
+    <tr><td>Vasu</td><td>Chennai</td></tr>
+    <tr class="warning"><td>Satish</td><td>Hyderabad</td></tr>
+    <tr><td>BC</td><td>Chennai</td></tr>
+    <tr class="error"><td>David</td><td>Hyderabad</td></tr>
+    </table>
+	
+	</div>
+
+
+</div>
+
+
+
     <table class="table table-hover">
     <thead>
     <tr class="success"><th>Name</th><th>Location</th></tr>
