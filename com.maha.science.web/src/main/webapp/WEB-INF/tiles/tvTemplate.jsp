@@ -78,7 +78,7 @@
 	<tiles:insertAttribute name="footer"  defaultValue="" />
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+    <script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
     
    	<!--page specific plugin scripts-->
 
