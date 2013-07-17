@@ -20,7 +20,7 @@
 					
 					<security:authorize access="!isAuthenticated()">
 			<!-- ace inlinesignin form -->
-												<form class="form-inline header-form" method="post" action="/science/j_spring_security_check">
+												<form class="form-inline header-form" method="post" action="science/j_spring_security_check">
 													<input type="text" name="j_username" placeholder="Email" class="input-small">
 													<input type="password"  name="j_password" placeholder="Password" class="input-small">
 													<label class="checkbox">
@@ -51,7 +51,7 @@
 								</li>
 								<li class="divider"></li>
 								<li>
-									<a href="<s:url value="/logout"></s:url>">
+									<a href="<s:url value="logout"></s:url>">
 										<i class="icon-off"></i>
 										Logout
 									</a>
