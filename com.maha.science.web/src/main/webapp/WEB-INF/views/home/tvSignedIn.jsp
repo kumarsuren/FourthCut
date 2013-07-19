@@ -2012,6 +2012,27 @@
 														</a> <a href="#"> <i class="icon-remove red"></i>
 														</a>
 													</div></li>
+													
+													
+									<li><a data-rel="colorbox"
+													href="http://img.youtube.com/vi/KvSuAT7Hi1I/0.jpg"
+													class="cboxElement"> <img
+														src="http://img.youtube.com/vi/KvSuAT7Hi1I/2.jpg"
+														alt="150x150">
+														<div class="tags">
+															<span class="label label-info arrowed">fountain</span> <span
+																class="label label-important">recreation</span>
+														</div>
+												</a>
+
+													<div class="tools tools-top">
+														<a href="#"> <i class="icon-link"></i>
+														</a> <a href="#"> <i class="icon-paper-clip"></i>
+														</a> <a href="#"> <i class="icon-pencil"></i>
+														</a> <a href="#"> <i class="icon-remove red"></i>
+														</a>
+													</div></li>													
+													
 
 												<li><a data-rel="colorbox"
 													href="resources/tv/assets/images/gallery/image-2.jpg"
@@ -2045,6 +2066,25 @@
 													href="resources/tv/assets/images/gallery/image-4.jpg"
 													class="cboxElement"> <img
 														src="resources/tv/assets/images/gallery/thumb-4.jpg"
+														alt="150x150">
+														<div class="tags">
+															<span class="label label-info arrowed">fountain</span> <span
+																class="label label-important">recreation</span>
+														</div>
+												</a>
+
+													<div class="tools tools-top">
+														<a href="#"> <i class="icon-link"></i>
+														</a> <a href="#"> <i class="icon-paper-clip"></i>
+														</a> <a href="#"> <i class="icon-pencil"></i>
+														</a> <a href="#"> <i class="icon-remove red"></i>
+														</a>
+													</div></li>
+
+												<li><a data-rel="colorbox"
+													href="http://img.youtube.com/vi/KvSuAT7Hi1I/0.jpg"
+													class="cboxElement"> <img
+														src="http://img.youtube.com/vi/KvSuAT7Hi1I/2.jpg"
 														alt="150x150">
 														<div class="tags">
 															<span class="label label-info arrowed">fountain</span> <span
